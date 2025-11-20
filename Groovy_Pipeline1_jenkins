@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Bulid') {
+            steps {
+                echo 'Application Build sucessfully'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test passed now'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Application has been deployed sucessfully'
+            }
+        }
+    }
+}
